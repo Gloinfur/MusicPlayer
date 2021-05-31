@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:gravity="center_horizontal">
+
+    <include
+        android:id="@+id/my_toolbar"
+        layout="=@layout/toolbar" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/ic_launcher_icon"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="left"
+            android:layout_marginTop="30dp">>
+
+            <TextView
+                android:id="@+id/txt_Title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:text="Title:" />
+
+            <TextView
+                android:id="@+id/txt_Title_Input"
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:layout_marginLeft="42dp"
+                android:text="---" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="left"
+            android:layout_marginTop="30dp">
+
+            <TextView
+                android:id="@+id/txt_Artist"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:text="Artist:" />
+
+            <TextView
+                android:id="@+id/txt_Artist_Input"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="33dp"
+                android:text="---" />
+
+        </LinearLayout>
+
+
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="30dp">>
+
+        <Button
+            android:id="@+id/button_previous"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/ic_previous_arrow"
+            android:onClick="previousSong" />
+
+        <Button
+            android:id="@+id/button_play"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:background="@drawable/ic_play_arrow"
+            android:onClick="play" />
+
+        <Button
+            android:id="@+id/button_next"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/ic_next_arrow"
+            android:onClick="nextSong" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/button_mute"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="@drawable/ic_volume_up"
+            android:onClick="mute" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/button_replay"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/ic_replay"
+            android:onClick="replay" />
+
+        <Button
+            android:id="@+id/button_book"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:background="@drawable/ic_book"
+            android:onClick="book" />
+
+        <Button
+            android:id="@+id/button_shuffle"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/ic_shuffle"
+            android:onClick="shuffle" />
+
+
+
+    </LinearLayout>
+
+
+
+
+
+
+</LinearLayout>
